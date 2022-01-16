@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>z-index</title>
+  <style>
+   img {
+    border: 1px solid #ce242b; /* Параметры рамки */
+    position: relative; /* Относительное позиционирование */
+    transition: 1s; /* Время анимации */
+   }
+   img:hover {
+    z-index: 10; /* Поверх всех картинок */
+    transform: scale(1.2); /* Масштабирование на 20% */
+   }
+  </style>
+ </head>
+ <body>
+  <img src="image/thumb1.jpg" alt="">
+  <img src="image/thumb2.jpg" alt="">
+  <img src="image/thumb3.jpg" alt="">
+ </body>
+</html>

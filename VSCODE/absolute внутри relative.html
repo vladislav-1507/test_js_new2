@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Положение элемента</title>
+  <style>
+   .block-1 {
+    position: relative; /* Относительное позиционирование */
+    background: #3989c9; /* Синий цвет фона */
+    min-height: 160px; /* Минимальная высота */
+    padding: 20px; /* Поля */
+    border: 2px solid #000; /* Параметры границы */
+   }
+   .block-2 {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; bottom: 0; /* Положение элемента */
+    background: #feea3f; /* Жёлтый цвет фона */
+    width: 50px; height: 50px; /* Размеры элемента */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="block-1">
+   <div class="block-2"></div>
+  </div>
+ </body>
+</html>

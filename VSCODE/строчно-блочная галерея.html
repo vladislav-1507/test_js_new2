@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Макет</title>
+  <style>
+   section {
+    display: inline-block; /* Строчно-блочный элемент */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+    min-height: 200px; /* Минимальная высота колонок */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    padding: 15px; /* Поля вокруг текста */
+   }
+   .col1 {
+    width: 20%; /* Ширина первой колонки */
+    background: #C8EAF5; /* Цвет фона первой колонки */
+   }
+   .col2 {
+    width: 40%; /* Ширина второй колонки */
+    background: #FEE4CD; /* Цвет фона второй колонки */
+   }
+   .col3 {
+    width: 40%; /* Ширина третьей колонки */
+    background: #E2EDC1; /* Цвет фона третьей колонки */
+   }
+  </style>
+ </head>
+ <body>
+  <main>
+   <section class="col1">Колонка 1</section>
+   <section class="col2">Колонка 2</section>
+   <section class="col3">Колонка 3</section>
+  </main>
+ </body>
+</html>
+
+<!-- Колонки создаём с помощью элементов <section> и в стилях для каждой колонки устанавливаем свойство display 
+    со значением inline-block, а также задаём выравнивание по верхнему краю через vertical-align. 
+    Поскольку padding оказывает влияние на ширину блока, то для упрощения добавляем box-sizing со значением border-box. 
+    После этого свойство width определяет уже ширину всего блока, а не его содержимого, как раньше. -->

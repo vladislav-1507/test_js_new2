@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Флажок</title>
+  <style>
+   .checkbox {
+    width: 28px; /* Ширина переключателя */
+    height: 28px; /* Высота переключателя */
+    background: #333; /* Цвет рамки */
+   }
+   .checkbox input[type=checkbox] {
+    position: absolute; /* Абсолютное позиционирование */
+    left: -9999px; /* Скрываем элемент */
+   }
+   .checkbox input[type=checkbox]:checked + label {
+    background: #009d4b; /* Цвет фона включенного переключателя */
+   }
+   .checkbox label {
+    display: block; /* Блочный элемент */
+    width: 20px; /* Ширина */
+    height: 20px; /* Высота */
+    position: relative; /* Относительное позиционирование */
+    left: 4px; top: 4px; /* Смещаем вправо и вниз */
+    background: #fff; /* Цвет фона выключенного переключателя */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="checkbox">
+   <input type="checkbox" id="c1" checked>
+   <label for="c1"></label>
+  </div>
+ </body>
+</html>

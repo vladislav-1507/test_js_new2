@@ -1,0 +1,65 @@
+<!doctype html>
+<title>Пример</title>
+<style>
+.wrapper {
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+.form-row > input {
+  flex: 2;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+.form-row > button {
+  background: gray;
+  color: white;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .form-row > input {
+    flex: 3; 
+  }
+}
+@media screen and (min-width: 992px) {
+  .form-row > input {
+    flex: 4; 
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-row > input {
+    flex: 5; 
+  }
+}
+</style>
+<form>
+  <ul class="wrapper">
+    <li class="form-row">
+      <label for="name">Имя</label>
+      <input type="text" id="name">
+    </li>
+    <li class="form-row">
+      <label for="townborn">Место рождения</label>
+      <input type="text" id="townborn">
+    </li>
+    <li class="form-row">
+      <label for="email">Адрес электронной почты</label>
+      <input type="email" id="email">
+    </li>
+    <li class="form-row">
+      <button type="submit">Отправить</button>
+    </li>
+  </ul>
+</form>
